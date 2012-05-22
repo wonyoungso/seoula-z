@@ -40,7 +40,13 @@ test:
 production:
   adapter: postgis
   encoding: unicode
+  host: localhost
+  port: 5432
   database: seoulaz_production
   pool: 5
   username: postgres
-  password: yourse123f
+  password: yourse1234f 
+  su_username: postgres
+  su_password: yourse1234f
+  script_dir: /usr/share/postgresql/8.4/contrib
+  schema_search_path: "public"
