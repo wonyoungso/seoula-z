@@ -41,12 +41,3 @@ class EduAcademiesController < ApplicationController
   end
 
 end
-
-
-@edus_map[0].keys.each do |key|
-  if !@edu_seoul[key].present?
-    @edu_seoul[key] = 0
-  end
-
-  @edu_seoul[key] += @edus_map.inject(0) { |sum, hash| sum + hash[key] }
-end
