@@ -1,0 +1,5 @@
+embed_assets: on
+package_assets : alaways
+javascripts:
+  templates:
+    - app/views/templates/*.jst

@@ -1,0 +1,30 @@
+<%= form_for [:admin, @article], :html => {:class => 'form-horizontal'} do |f| %>
+  <div class="control-group">
+    <%= f.label :title, '제목', :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :title, :class => 'input-xlarge' %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <%= f.label :description, '설명', :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :description, :class => 'input-xlarge span10', :style => 'height:200px' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :template_path, '템플릿 경로', :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :template_path, :class => 'input-xlarge' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :template, '템플릿', :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :template, :class => 'input-xlarge span10', :style => 'height:500px' %>
+    </div>
+  </div>
+  <div class="form-actions">
+    <%= f.submit '저장', :class => 'btn btn-primary' %>
+  </div>
+<% end %>

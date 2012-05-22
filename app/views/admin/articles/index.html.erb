@@ -1,0 +1,34 @@
+<h2>
+  articles
+</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>
+          제목
+        </th>
+        <th>
+          업로드일
+        </th>
+        <th>
+          삭제
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @articles.each do |article| %>
+        <tr>
+          <td>
+            <%= link_to article.title, edit_admin_article_path(article) %>
+          </td>
+          <td>
+            <%= article.updated_at.strftime('%Y/%m/%d') %>
+          </td>
+          <td>
+            <%= link_to '삭제', admin_article_path(article), :method => :delete, :confirm => '정말 삭제하시겠습니까?' %>
+          <td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <%= link_to '새 주제글 추가', new_admin_article_path, :class => 'btn' %>

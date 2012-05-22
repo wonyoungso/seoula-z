@@ -1,0 +1,25 @@
+<div data-article-id="<%= @article.id %>" id="energy_0" class="article_section">
+  <div class="title">
+    <img src="/assets/energy_0_title.png" alt="<%= @article.title %>"/>
+    <div class="description">
+      <%= simple_format(@article.description) %>
+    </div>
+    <div class="btns">
+      <%= link_to '구별 에너지 사용량(2008)', '#', :class => 'btn', :id => 'energy_btn' %><br/>
+      <%= link_to '구별 사업체 수(2010)', '#', :class => 'btn', :id => 'business_btn' %>
+    </div>
+    <div class="sns">
+      <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fseoul.tiia.kr&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=321536371233551" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true"></iframe>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ko">트윗하기</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+  </div>
+  <div class="map_area">
+  </div>
+
+</div>
+<script>
+  $(document).ready(function(E){
+    CDNM.views.energy_view_zero(<%= @article.id %>);
+  });
+</script>

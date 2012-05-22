@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Seoul A-Z Project</title>
+  <%= stylesheet_link_tag 'http://api.mobilis.co.kr/webfonts/css/?fontface=NanumGothicBoldWeb' %>
+  <%= stylesheet_link_tag 'http://api.mobilis.co.kr/webfonts/css/?fontface=NanumGothicWeb' %>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <%= javascript_include_tag "application" %>
+  <script src="/assets/templates.jst" type="text/javascript"></script>
+  <%= render 'layouts/header' %>
+    <%= yield %>
+  <%= render 'layouts/footer' %>
+</body>
+</html>

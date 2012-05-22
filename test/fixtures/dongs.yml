@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  dong_key: 1
+  borough_id: 1
+
+two:
+  name: MyString
+  dong_key: 1
+  borough_id: 1

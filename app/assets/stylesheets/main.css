@@ -1,0 +1,489 @@
+body, div, td, input, text, textarea {
+  font-family: 'NanumGothicWeb';
+  font-size:12px;
+}
+
+div.CB {
+  clear:both !important;
+}
+
+.modal_back {
+  background-color: black;
+  opacity: 0.7;
+  filter: alpha(opacity=50);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  display:none;
+  z-index: 9999;
+}
+
+.modal_restroom {
+  width: 500px;
+  margin-left: -250px;
+  display: none;
+  padding:20px;
+}
+
+.modal_restroom .contents{
+  padding:10px;
+}
+
+.modal {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color:white;
+  -moz-box-shadow: 0px 0px 5px #000;
+  -webkit-box-shadow: 0px 0px 5px 
+  black;
+  box-shadow: 0px 0px 5px 
+  black;
+  overflow: hidden;
+  display:none;
+  z-index:10000;
+}
+
+
+#header_wrapper{
+  position: fixed;
+  left:0;
+  top:0;
+  z-index:9999;
+  width:100%;
+}
+
+#header {
+  position: absolute;
+  left:0;
+  top:0;
+  z-index:9999;
+  width:100%;
+  height:200px;
+  background-color:rgba(0, 0, 0, 0.8);
+}
+
+#header .wrapper{
+  width:1000px;
+  margin:0 auto;
+}
+
+#logo{
+  position: absolute;
+  left:50%;
+  top:20px;
+  margin-left:-59px;
+}
+#logo h1 a{
+  display: block;
+  background:url(/assets/logo.png) no-repeat;
+  width:119px;
+  height:119px;
+  text-indent:-9999px;
+}
+
+#by_category {
+  margin-top:63px;
+}
+#by_category #by_category_img {
+  float:left;
+  margin-top:13px;
+}
+
+
+#by_category a.prev_btn {
+  background:url(/assets/category_prev_btn.png) no-repeat;
+  width:14px;
+  height:20px;
+  text-indent:-9999px;
+  display: block;
+  float:left;
+  margin:10px 20px 0 20px;
+}
+
+
+#by_category a.next_btn {
+  background:url(/assets/category_next_btn.png) no-repeat;
+  width:14px;
+  height:20px;
+  text-indent:-9999px;
+  display: block;
+  float:left;
+  margin:10px 0 0 10px;
+}
+
+#by_category .category_list div.category{
+  float:left;
+  width:40px;
+  margin-right:10px;
+}
+
+#by_category .category_list div.category .wrapper {
+  height:40px;
+  width:40px;
+  margin-left:3px;
+}
+
+#by_category .category_list div.category em{
+  display: none;
+  font-size:1.1em;
+  font-style:normal;
+  font-weight:bold;
+  color:#E55129;
+  text-align:center;
+  margin-top:2px;
+
+}
+
+.category_list div.category a.category_btn {
+  text-indent: -9999px;
+  display: block;
+  margin-right:15px;
+}
+  .category_list div.category a#category_energy_btn {
+    width:32px;
+    height:36px;
+    background:url(/assets/menu_energy_icon.png) 0 -36px no-repeat;
+  }
+  .category_list div.category a#category_energy_btn:hover {
+    background-position:0 0;
+  }
+
+  .category_list div.category a#category_education_btn {
+    width:32px;
+    height:37px;
+    background:url(/assets/menu_education_icon.png) 0 -37px no-repeat;
+  }
+  .category_list div.category a#category_education_btn:hover {
+    background-position:0 0;
+  }
+
+  .category_list div.category a#category_residence_btn {
+    width:36px;
+    height:33px;
+    background:url(/assets/menu_residence_icon.png) 0 -33px no-repeat;
+  }
+  .category_list div.category a#category_residence_btn:hover {
+    background-position:0 0;
+  }
+
+  .category_list div.category a#category_transportation_btn {
+    width:37px;
+    height:36px;
+    background:url(/assets/menu_transportation_icon.png) 0 -36px no-repeat;
+  }
+  .category_list div.category a#category_transportation_btn:hover {
+    background-position:0 0;
+  }
+#by_latest 
+{
+  float:right;
+}
+
+#by_latest #by_latest_img {
+  float:right;
+  margin-top:13px;
+  margin-left:20px;
+}
+
+#by_latest .latest_list {
+  float:right;
+  font-size:1.0em;
+  color:white;
+  margin-top:10px;
+  margin-right:10px;
+  padding-left:15px;
+  line-height:14px;
+  background:url(/assets/latest_pin.png) no-repeat;
+}
+
+#toggle_header {
+  width:120px;
+  position: absolute;
+  left:50%;
+  margin-left:-60px;
+  top:200px;
+}
+
+#content{
+}
+
+#toggle_header #toggle_header_btn {
+  width:120px;
+  height:30px;
+  background:url(/assets/toggle_header.png) no-repeat 0 0;
+  display: block;
+  text-indent: -9999px;
+}
+
+
+#toggle_header #toggle_header_btn{
+  
+  background:url(/assets/toggle_header.png) no-repeat 0 0;
+}
+
+#toggle_header #toggle_header_btn.collapsed{
+  background:url(/assets/toggle_header.png) no-repeat 0 -30px;
+}
+
+#footer
+{
+  background-color:black;
+  color:#eee;
+}
+
+#footer .wrapper {
+  width:1000px;
+  margin:0 auto;
+}
+
+#footer .sub_menu  {
+  background-color:#111;
+  padding:20px;
+  border-bottom:1px solid #1b1b1b;
+}
+
+#footer .wrapper ul {
+  margin:0;padding:0;
+}
+
+#footer .wrapper ul li {
+  display:inline;
+  font-size:1.2em;
+  margin-right:15px;
+}
+
+#footer .ccl_codenamu{
+  padding:20px;
+  height:150px;
+}
+
+#footer .ccl {
+  background:url(/assets/ccl_by.png) 0 5px no-repeat;
+  padding-left:30px;
+  float:left;
+}
+
+#footer .codenamu_logo {
+  float:right;
+  width:48px;
+  height:53px;
+}
+
+#energy_0.article_section {
+  position: relative;
+  background:url(/assets/energy_background.png);
+}
+
+  #energy_0.article_section .title {
+    position: absolute;
+    left:40px;
+    top:40px;
+    width:320px;
+  }
+
+  #energy_0.article_section .title .description {
+    padding:10px 23px 0px 23px;
+    font-size:1.1em;
+    line-height:160%;
+    color:white;
+  }
+
+  #energy_0.article_section {
+    padding-left:250px;
+    padding-top:100px;
+  }
+
+  #energy_0.article_section .sns, #energy_0.article_section .btns {
+    padding:0 23px 23px 23px;
+  }
+
+  #energy_0.article_section .btns a {
+    margin-bottom:5px;
+  }
+
+  path.borough{
+    cursor: pointer;
+  }
+
+#restroom.article_section {
+  height:800px;
+  position: relative;
+  background:url(/assets/restrooms_background.png);   
+}
+
+  #restroom.article_section .title_section {
+    position: absolute;
+    left:40px;
+    top:40px;
+    width:320px;
+    z-index:9000;
+  }
+
+  #restroom.article_section .description p{
+    color:#eee;
+    line-height:160%;
+  }
+
+  #restroom.article_section .title_section .relative_wrapper {
+    position: relative;
+  }
+
+  #restroom.article_section .title_section .relative_wrapper .btn-group {
+    position: absolute;
+    left:0;
+    top:0;
+  }
+
+
+  #restroom.article_section .title_section .relative_wrapper .title {
+    position: absolute;
+    left:186px;
+    top:6px;
+  }
+
+  #map-div {
+    position: absolute;
+    left:40px;
+    bottom:20px;
+    width:870px;
+    height:680px;
+  }
+
+
+
+
+  #restroom.article_section .title_section a.borough_select_toggle { 
+    font-size:1.5em;
+    font-weight:bold;
+    padding:10px 50px;
+    background:white !important;
+    color:#F2592D;
+    border-radius:5px;
+  }
+
+  #restroom.article_section .description {
+    position: absolute;
+    right: 59px;
+    top: 45px;
+    width: 263px;
+  }
+
+  #restroom.article_section .description .legend{
+    padding:10px;
+    background-color:#CA391E;
+    color:white;
+    margin-bottom:10px;
+    border-radius:5px;
+  }
+
+#education_0.article_section {
+  height:1200px;
+  position: relative;
+  color:white;
+  background:#1e1e1e url(/assets/education_background.png) center top no-repeat;   
+}
+
+  #education_0.article_section .title_section {
+    position: absolute;
+    left:50px;
+    top:90px;
+    width:318px;
+  }
+
+  #education_0.article_section .title_section .description p {
+    margin:20px 0;
+    width:318px;
+    font-size:1.1em;
+    line-height:170%;
+  }
+
+  #education_0.article_section .btns {
+    left: 409px;
+    position: absolute;
+    z-index:9000;
+    top: 90px;
+  }
+
+  #education_0.article_section .academy_info {
+    position: absolute;
+    left:43px;
+    color:white;
+    top:800px;
+    width:860px;
+    height:250px;
+    padding:20px;
+    background-color:#222;
+    border-radius:10px;
+  }
+
+  #education_0.article_section .legend {
+    top:558px;
+    left: 43px;
+    position: absolute;
+    z-index:9000;
+  }
+
+  #education_0.article_section .map_area svg {
+    margin-left:250px;
+    margin-top:70px;
+  }
+
+  .tooltip_custom {
+    background-color:#222;
+    padding:10px;
+    border-radius: 10px;
+    position: absolute;
+    z-index:10000;
+    left:0;
+    width:132px;
+    height:49px;
+    top:0;
+    color:white;
+  }
+
+  .tooltip_borough_text {
+    font-size:1.0em;
+  }
+  .tooltip_education, .tooltip_education_satisfactory {
+    background-color:#CCC;
+    padding:10px;
+    border-radius: 10px;
+    position: absolute;
+    z-index:10000;
+    left:0;
+    width:150px;
+    height:100px;
+    opacity:0.9;
+    top:0;
+    color:#222
+  }
+  .tooltip_education_satisfactory {
+    width:200px;
+    height:120px;
+  }
+
+  .tooltip_custom div.before {
+    float:left;
+    margin-top:3px;
+    font-size:1.2em;
+  }
+
+  .tooltip_custom div em {
+    font-size:1.4em;
+    font-style: normal;
+    font-weight:bold;
+    color:#66CDC4;
+  }
+
+  .tooltip_custom div.after {
+    float:right;
+    font-size:1.2em;
+    margin-top:3px;
+  }
+
+
+
+

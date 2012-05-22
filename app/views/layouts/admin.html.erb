@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Seoul A-Z Project :: Admin</title>
+  <%= stylesheet_link_tag    "admin", :media => "all" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <%= render 'layouts/admin/header' %>
+  <div class="container">
+    <%= yield %>
+    <%= render 'layouts/admin/footer' %>
+  </div>
+  <%= javascript_include_tag "admin" %>
+</body>
+</html>
