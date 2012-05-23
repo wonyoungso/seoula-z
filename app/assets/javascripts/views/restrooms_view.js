@@ -8,7 +8,7 @@ CDNM.views.restrooms_view = (function(){
     restroom_info_modal = new CDNM.models.RestroomInfoModal();
     restroom_info_modal.init();
   
-    wax.tilejson('http://localhost:8888/v2/seoul_restrooms.json',
+    wax.tilejson('http://tilestream.tiia.kr:8888/v2/seoul_restrooms.json',
       function(tilejson) {
         tilejson.template = "{{#__location__}}{{/__location__}}{{#__teaser__}}{{/__teaser__}}{{#__full__}}{{{id}}}{{/__full__}}"
       var map = new L.Map('map-div')
